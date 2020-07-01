@@ -4,8 +4,9 @@ let specialUnicode = [
     code: "&#x276F",
   },
   {
-    name: "Comet",ls
+    name: "Comet",
     
+
   },
 ];
 
