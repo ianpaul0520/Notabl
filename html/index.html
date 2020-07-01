@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notabl</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container header my-2 light-shadow">
+      <section class="section has-background-light">
+        <div class="level">
+          <div class="level-left">
+            <h3
+              class="level-item title has-text-link has-text-centered mt-3 wormy-font"
+            >
+              Notabl
+            </h3>
+            <p class="level-item small has-text-dark victor-font">
+              Sample Text here
+            </p>
+          </div>
+
+          <div class="level-right">
+            <p id="about" class="level-item small has-text-primary has-text">
+              About
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="container my-3">
+      <div class="py-3 px-3 has-background-light light-shadow">
+        <div class="level">
+          <div class="level-left">
+            <h3 class="subtitle has-text-weight-light">To create a note</h3>
+          </div>
+          <div class="level-right">
+            <!-- Button for Creating Any Type of Notes -->
+            <button id="create-note-button" class="button is-success is-light">
+              <p class="is-capitalized has-text-weight-medium">
+                Create a Note <span id="directional-unicode"></span>;
+              </p>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- This is a form that is hide in after the page loads. -->
+      <div class=""></div>
+
+      <div class="columns my-2 mx-1">
+        <div class="column has-background-light mx-1">
+          <div class="">
+            <h3 class="subtitle has-text-centered">Current Task</h3>
+          </div>
+
+          <div>
+            <!-- Javascript will handle this. -->
+          </div>
+        </div>
+
+        <div class="column has-background-light mr-1">
+          <div class="">
+            <h3 class="subtitle has-text-centered">Current Events</h3>
+          </div>
+
+          <div>
+            <!-- Javascript will handle this. -->
+          </div>
+        </div>
+
+        <div class="column has-background-light mr-1">
+          <div class="">
+            <h3 class="subtitle has-text-centered">Important</h3>
+          </div>
+
+          <div>
+            <!-- Javascript will handle this. -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
