@@ -15,11 +15,12 @@
     />
   </head>
   <body>
-    <header class="container header my-2">
-      <section class="section">
+    <div></div>
+    <header class="hero container header">
+      <section class="hero-body">
         <div class="level">
           <h3
-            class="level-item title has-text-link has-text-centered mt-3 wormy-font"
+            class="level-item title has-text-link has-text-centered wormy-font"
           >
             Notabl
           </h3>
@@ -51,7 +52,27 @@
       </section>
 
       <!-- This is a form that is hide in after the page loads. -->
-      <div class=""></div>
+      <button id="activate-button" class="button is-outlined is-link">
+        Activate Modal
+      </button>
+
+      <!-- Try Modal -->
+      <div id="my-modal" class="modal">
+        <div id="modal-background" class="modal-background"></div>
+        <div class="modal-content">
+          <p class="image is-4by3">
+            <img
+              src="https://bulma.io/images/placeholders/1280x960.png"
+              alt=""
+            />
+          </p>
+        </div>
+        <button
+          id="modal-close"
+          class="modal-close is-large"
+          aria-label="close"
+        ></button>
+      </div>
 
       <div class="columns my-2">
         <div class="column has-background-light mx-1">
