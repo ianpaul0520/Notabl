@@ -22,3 +22,13 @@ function addClassFn(classname, element) {
 function removeClassFn(classname, element) {
   element.classList.remove(classname);
 }
+
+function senseTime(color) {
+  let smoothDark = String(color);
+  document.getElementsByTagName("body").style.color = "smoothDark";
+}
+
+function toggleToDark() {
+  let allEle = document.getElementsByClassName("has-background-light");
+}
+function toggleToLight() {}

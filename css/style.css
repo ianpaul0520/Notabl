@@ -9,3 +9,16 @@
 .light-shadow {
   box-shadow: 0px 0px 3px #888888;
 }
+
+.toggle-Dark {
+  background-color: #414141;
+}
+.toggle-Light {
+  background-color: #e4e3e3;
+}
+
+.foo {
+  width: 200px;
+  background-color: cadetblue;
+  padding: 3px;
+}

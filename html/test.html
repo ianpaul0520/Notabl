@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  </head>
+  <body>
+    <h3 class="title has-text-centered">This is a Test Page</h3>
+
+    <div class="container has-background-light px-2">
+      <div class="columns">
+        <!-- Task Column -->
+        <div class="column">
+          <div>
+            <h3 class="subtitle has-text-centered has-text-warning">
+              Task Modal be Like
+            </h3>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="field">
+                <label class="label" for="">Task Name</label>
+                <div class="control">
+                  <input class="input is-primary" type="text" name="" id="" />
+                </div>
+              </div>
+              <div class="field">
+                <label class="label" for="">Task Description</label>
+                <div class="control">
+                  <textarea
+                    name=""
+                    id=""
+                    class="textarea is-link"
+                    cols="30"
+                    rows="10"
+                    placeholder="Enter the Description of your task"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <button class="button is-outlined has-background-info">
+                    Post
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Note Column -->
+        <div class="column">
+          <div class="card">
+            <div class="card-content">
+              <div class="field">
+                <label class="label" for="">Subject</label>
+                <div class="control">
+                  <input class="input is-info" type="text" />
+                </div>
+                <div class="field">
+                <label class="label" for="">Enter Note</label>
+                <div class="control">
+                  <textarea name="" id="" class="textarea is-link" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="">
+                <button class="button is-info">Submit</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="my-5 container">
+      <h3 id="demo is-link">return function here</h3>
+      <div class="my-container" id="container">
+        
+      </div>
+    </div>
+    <script src="../js/modal.js"></script>
+    <script>
+
+      function magicButton(target) {
+        if(evaluate(target)) {
+        let button = document.createElement('button');
+        let text = document.createTextNode("Clic Me!");
+        
+        button.classList.add('button', 'is-light', 'is-info');
+        
+        button.appendChild(text);
+        button.addEventListener('click', function(){
+          b.classList.toggle('is-outlined');
+          alert("Hey You!!!")
+        })
+        document.getElementById('container').appendChild(button)
+        }
+        else {
+          console.error("It does not work!")
+        }
+      }
+
+      let mybody = document.getElementsByTagName('body');
+      let div = document.createElement('div');
+      let p = document.createElement("p");
+      let txtNode = document.createTextNode("Hi There.");
+      
+      div.className = 'foo';
+      
+      p.appendChild(txtNode);
+      div.appendChild(p); 
+      document.getElementById('container').appendChild(div)
+      
+    
+      function evaluate(arg) {
+        if(arg != undefined) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      magicButton()
+    </script>
+  </body>
+</html>
